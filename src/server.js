@@ -1,6 +1,7 @@
 const {Client} = require('@notionhq/client');
+import API_KEY from './apikey';
 
-const notion =new Client({ auth: 'secret_PH2IQ5AdfgMtUiYd8PIG7lWYankBv7erRalastFIAtf'});
+const notion =new Client({ auth: API_KEY});
 
 export const notionCall=(async () => {
   const databaseId = '62b7073e412a48cfa18d4ff5c2b1079c';
