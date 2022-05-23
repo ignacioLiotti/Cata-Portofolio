@@ -1,5 +1,3 @@
-import API_KEY from './apikey';
-
 const {Client} = require('@notionhq/client');
 
 const notion =new Client({ auth: API_KEY});

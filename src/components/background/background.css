@@ -22,18 +22,16 @@
     font-weight: 300;
     font-family: var(--font-secondary);
     line-height: 1.5rem;
-}
-@media screen and (max-width: 880px){
-    .background__card{
-        flex-direction: column;
-    }
-}
+} 
 @media screen and (max-width: 600px){
+    .background__card{
+        padding: 2rem 3rem;
+        width: 100vw;
+    }
     .background__card h1{
         font-size: 3rem;
-        padding: 1rem 2rem;
     }
     .background__card p{
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 }

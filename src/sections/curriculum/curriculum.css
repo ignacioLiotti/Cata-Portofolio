@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     padding: 0 15%;
+    overflow: hidden;
 }
 .curriculum__container{
     display: flex;
@@ -97,7 +98,7 @@
 }
 @media screen and (max-width: 600px){
     .curriculum__container-curriculum img{
-        width: 80%;
+        width: 100%;
     }
     .curriculum__container-description h1{
         font-size: 2.5rem;
