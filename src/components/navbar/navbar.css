@@ -1,0 +1,75 @@
+nav{
+    display: flex;
+    top: 0;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    transition: all 0.3s ease-out;
+}
+nav h1{
+    z-index: 20;
+    position: relative;
+}
+.navBtn{
+    display: none;
+    z-index: 20;
+    position: relative;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin-right: 1rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s;
+}
+nav ul li:first-child{
+    font-weight: 500;
+}
+nav ul li a:hover{
+    color: rgb(68, 68, 68);
+}
+@media screen and (max-width: 800px){
+    .navBtn{
+        display: flex;
+        font-size: 3rem;
+        z-index: 20;
+    }
+    nav ul{
+        display: none;
+    }
+    nav #shown{
+        top: 0;
+        right: 0;
+        z-index: 11;
+        display: flex;
+        background-color: #fff;
+        position: absolute;
+        flex-direction: column;
+        padding: 1rem 2rem;
+        padding-top: 5rem;
+        margin-top: 1rem;
+        border-radius: 0 0 0 2rem;
+        animation: drop 0.3s  ease-in-out forwards;
+        transform-origin: top center;
+    }
+    nav ul li{
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+}
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: rotateX(90deg);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}

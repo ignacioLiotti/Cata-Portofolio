@@ -1,0 +1,82 @@
+.contact__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 5% 15%;
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+.contact_left{
+    flex:0.8 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding-right: 5%;
+}
+.contact_left form{
+    width: 100%;
+}
+.contact_right{
+    flex:0.2 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.contact_right h2{
+    font-family: var(--font-tertiary);
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    padding-top: 2rem;
+}
+.contact_right .contact__socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    font-size: 3rem;
+}
+.contact_right .contact__socials a{
+    color: #000;
+    transition: all 0.3s ease;
+    margin:1rem;
+    display: flex;
+}
+.contact_right .contact__socials .socials:hover, .contact_right .contact__socials .socials:hover a
+    {
+    color: var(--color-tertiary);
+    transition: all 0.3s ease;
+}
+.socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 768px){
+    .contact__container{
+        flex-direction: column;
+        padding: 5% 10%;
+    }
+    .contact_left{
+        flex:1 1 auto;
+        padding-right: 0;
+    }
+    .contact_right{
+        flex:1 1 auto;
+    }
+    .contact_right .contact__socials{
+        padding-top: 0;
+        font-size: 1.7rem;
+    }
+    .contact_right .contact__socials a{
+        font-size: 3rem;
+    }
+}

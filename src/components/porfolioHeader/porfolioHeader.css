@@ -1,0 +1,47 @@
+.porfolioHeader__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.porfolioHeader__container-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.porfolioHeader__container-title h1{
+    font-size: 5rem;
+    font-weight: 500;
+    text-align: center;
+    font-family: var(--font-primary);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: -5px;
+    background-image: url(../../img/heroRectangleRed.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+.porfolioHeader__container-title img{
+    width: 100%;
+    margin-bottom: 0rem;
+}
+.porfolioHeader__container ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.porfolioHeader__container ul li a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    text-decoration: none;
+    color: black;
+}

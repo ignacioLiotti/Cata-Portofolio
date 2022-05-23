@@ -1,0 +1,48 @@
+form{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+}
+form label{
+    font-family: var(--font-tertiary);
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    padding-top: 1rem;
+}
+form input,textarea{
+    width:100%;
+    padding:1rem;
+    box-shadow: 10px 10px 0 0 rgba(0,0,0,1);
+    border: solid 2px #000;
+    transition: all 0.3s ease;
+}
+form input{
+    height:3rem;
+}
+form textarea{
+    height:6rem;
+}
+form input:hover,
+form textarea:hover,
+form input:focus,
+form textarea:focus,
+form input:active,
+form textarea:active{
+    outline: none;
+
+    padding-left: 1.5rem;
+    box-shadow: 5px 5px 0 0 rgba(0,0,0,1);
+    transition: all 0.3s ease;
+}
+form .button{
+    margin-top: 3.5rem;
+    width: 100%;
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+}

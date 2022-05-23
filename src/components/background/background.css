@@ -1,0 +1,39 @@
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+}
+.background__card{
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 4rem 2rem;
+    gap: 0.5rem;
+}
+.background__card h1{
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: var(--font-primary);
+}
+.background__card p{
+    font-size: 0.8rem; 
+    font-weight: 300;
+    font-family: var(--font-secondary);
+    line-height: 1.5rem;
+}
+@media screen and (max-width: 880px){
+    .background__card{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 600px){
+    .background__card h1{
+        font-size: 3rem;
+        padding: 1rem 2rem;
+    }
+    .background__card p{
+        font-size: 0.7rem;
+    }
+}

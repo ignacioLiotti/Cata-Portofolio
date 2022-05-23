@@ -1,0 +1,8 @@
+export {default as Navbar} from './navbar/Navbar'
+export {default as Footer} from './footer/Footer'
+export {default as Background} from './background/Background'
+export {default as Datos} from './datos/Datos'
+export {default as Contact} from './contact/Contact'
+export {default as PorfolioHeader} from './porfolioHeader/PorfolioHeader'
+export {default as Project} from './project/Project'
+export {default as Form} from './form/Form'	

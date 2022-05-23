@@ -1,0 +1,27 @@
+.proyectos__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 60%;
+    margin: auto;
+}
+.proyectos__container-proyectos{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(250px, 1fr));
+    grid-gap: 5rem;
+    justify-content: center;
+}
+.proyectos__container-titulo{
+    font-size: 5rem;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    background-image: url('../../img/heroRectangleRed.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    text-align: left;
+    background-size: 250px 35px;
+}

@@ -1,0 +1,111 @@
+.curriculum{
+    display: flex;
+    flex-direction: column;
+    padding: 0 15%;
+}
+.curriculum__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.curriculum__container-curriculum{
+    flex: 0.4;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.curriculum__container-curriculum img{
+    width: 100%;
+    transition: all 0.5s;
+}
+.curriculum__container-curriculum .download{
+    opacity: 0;
+    position: absolute;
+    color: #fff;
+    background-color: var(--color-primary);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    left: 45%;
+    top: 45%;
+    transition: all 0.5s;
+}
+.curriculum__container-curriculum a{
+    text-decoration: none;
+    color:#fff
+}
+.curriculum__container-curriculum:hover img{
+    opacity: 0.2;
+    transition: all 0.5s;
+
+}
+.curriculum__container-curriculum:hover .download{
+    opacity: 1;
+    transition: all 0.5s;
+
+}
+.curriculum__container-description{
+    flex: 0.6;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem
+}
+.curriculum__container-description h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: var(--font-primary);
+
+    padding-bottom: 1rem;
+    padding-right: 5rem;
+    background-image: url(../../img/heroRectangleRed.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.curriculum__container-description p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: var(--font-secondary);
+    line-height: 1.5rem;
+}
+.curriculum__container-description p:last-child{
+    font-size: .8rem;
+    font-weight: 500;
+}
+.curriculum__container-description ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+}
+.curriculum__container-description ul li{
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: var(--font-secondary);
+    line-height: 1.5rem;
+    color: var(--color-primary);
+}
+@media screen and (max-width: 880px){
+    .curriculum__container{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 600px){
+    .curriculum__container-curriculum img{
+        width: 80%;
+    }
+    .curriculum__container-description h1{
+        font-size: 2.5rem;
+    }
+    .curriculum__container-description p{
+        font-size: 1rem;
+    }
+    .curriculum__container-description ul li{
+        font-size: 1rem;
+    }
+}

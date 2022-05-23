@@ -1,0 +1,71 @@
+.datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5rem 0;
+}
+.datos h1{
+    font-size: 5rem;
+    font-weight: 500;
+    font-family: var(--font-primary);
+    width: 60%;
+    padding: 1rem 2rem;
+    color: #fff;
+    background-image: url(../../img/rectangleBlack.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.datos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.datos-container_elements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+.datos-container_text{
+    flex: 1;
+}
+.datos-container_text h2{
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: var(--font-primary);
+}
+.datos-container_text p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--font-tertiary);
+    letter-spacing: 1px;
+}
+.datos-container_elements img{
+    flex:0.3;
+    width: 70%;
+}
+@media screen and (max-width: 550px){
+    .datos-container_elements{
+        flex-direction: column-reverse;
+    }
+    .datos-container_text{
+        width: 100%;
+    }
+    .datos-container_text h2{
+        font-size: 3rem;
+    }
+    .datos-container_text p{
+        font-size: 1rem;
+    }
+    .datos-container_elements{
+        width: 80%;
+        margin: 1rem;
+        gap: 1rem;
+    }
+    .datos h1{
+        font-size: 3rem;
+    }
+
+}
