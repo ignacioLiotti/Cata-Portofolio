@@ -3,7 +3,7 @@ import { HeroSection,Projects } from '../../sections'
 import { PorfolioHeader } from '../../components'
 import comingSoon from '../../img/comingSoon.png'
 import { useParams } from 'react-router-dom'
-import { notionCall } from '../../server'
+import { notionCall } from '../../../server'
 
 import './porfolio.css'
 

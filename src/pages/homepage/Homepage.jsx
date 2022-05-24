@@ -7,7 +7,6 @@ import {Curriculum, HeroSection} from '../../sections'
 import { Datos, Contact} from '../../components'
 
 const Homepage = () => {
-console.log(process.env)
 
   return (
     <>
