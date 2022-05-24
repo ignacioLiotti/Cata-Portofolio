@@ -2,8 +2,6 @@ import React from 'react'
 import './heroSection.css'
 import { Link } from 'react-router-dom'
 import rectangle from '../../img/heroRectangle.png'
-import line from '../../img/heroLine.png'
-import heroImg from '../../img/heroImage.png'
 
 const HeroSection = () => {
   return (

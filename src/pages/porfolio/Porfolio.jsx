@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { HeroSection,Projects } from '../../sections'
 import { PorfolioHeader } from '../../components'
-import comingSoon from '../../img/comingSoon.png'
-import { useParams } from 'react-router-dom'
 import { notionCall } from '../../api'
 
 import './porfolio.css'

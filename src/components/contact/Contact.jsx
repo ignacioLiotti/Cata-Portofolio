@@ -19,7 +19,7 @@ const Contact = () => {
 
           <div className='socials'>
             <DoubleBoop timing='300' rotation='10'>
-              <a href='https://twitter.com/CataMGalindez?s=20&t=tWE4P2y6CH3EeNHyrIYT-w' target="_blank" >
+              <a href='https://twitter.com/CataMGalindez?s=20&t=tWE4P2y6CH3EeNHyrIYT-w' target="_blank" rel="noreferrer" >
                 <FaTwitterSquare/>
               </a>
             <p>@CataMGalindez</p>
@@ -28,7 +28,7 @@ const Contact = () => {
 
           <div className='socials'>
             <DoubleBoop timing='300' rotation='10'>
-              <a href='https://twitter.com/CataMGalindez?s=20&t=tWE4P2y6CH3EeNHyrIYT-w' target="_blank" >
+              <a href='https://twitter.com/CataMGalindez?s=20&t=tWE4P2y6CH3EeNHyrIYT-w' target="_blank" rel="noreferrer" >
                 <FaLinkedin/>
               </a>
             <p>/catalinagalindez</p>

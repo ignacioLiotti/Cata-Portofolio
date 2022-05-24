@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { notionCall } from '../../api';
-import ReactHtmlParser from 'react-html-parser';
-
-
-
 
 const BlogPost = () => {
   
@@ -24,11 +20,11 @@ const handlePopUp = (e) => {
 
   const urlId=useParams()
 //   console.log(urlId)
-  const page = notionData?.results?.find(post=>(post.properties?.Name?.title?.[0].plain_text==urlId?.id))
+  const page = notionData?.results?.find(post=>(post.properties?.Name?.title?.[0].plain_text===urlId?.id))
   console.log('hola',page)
 
-  const img = page?.properties?.Image?.files?.[0]?.file?.url
-  const name = page?.properties?.Name?.title?.[0].plain_text
+  // const img = page?.properties?.Image?.files?.[0]?.file?.url
+  // const name = page?.properties?.Name?.title?.[0].plain_text
   const summary = page?.properties?.Content?.rich_text?.[0]?.plain_text
 
   console.log('summary',typeof summary)

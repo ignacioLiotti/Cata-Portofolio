@@ -10,12 +10,12 @@ const Footer = () => {
       <Link to='/'>Catalina Maria Galindez</Link>
       <div className='socials'>
         <Boop timing='300' rotation='10'>
-          <a href='https://twitter.com/CataMGalindez?s=20&t=tWE4P2y6CH3EeNHyrIYT-w' target="_blank" >
+          <a href='https://twitter.com/CataMGalindez?s=20&t=tWE4P2y6CH3EeNHyrIYT-w' target="_blank" rel="noreferrer" >
             <FaTwitter/>
           </a>
         </Boop>
         <Boop timing='300' rotation='10'>
-          <a href='https://twitter.com/CataMGalindez?s=20&t=tWE4P2y6CH3EeNHyrIYT-w' target="_blank" >
+          <a href='https://twitter.com/CataMGalindez?s=20&t=tWE4P2y6CH3EeNHyrIYT-w' target="_blank" rel="noreferrer" >
             <FaLinkedinIn/>
           </a>
         </Boop>

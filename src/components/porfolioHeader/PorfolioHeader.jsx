@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import line from '../../img/rectangleShort.png'
-import rectangle from '../../img/heroRectangleRed.png'
 import './porfolioHeader.css'
 
 const PorfolioHeader = () => {
