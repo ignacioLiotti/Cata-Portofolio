@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState,useEffect}from 'react';
 import { useSpring } from 'react-spring';
 function useBoop({
   x = 0,
@@ -13,7 +13,7 @@ function useBoop({
   },
 })
 {
-  const [isBooped, setIsBooped] = React.useState(false);
+  const [isBooped, setIsBooped] = useState(false);
 
   const style = useSpring({
     display: 'inline-block',
@@ -29,7 +29,7 @@ function useBoop({
     config: springConfig,
   });
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (!isBooped) {return;}
     const timeoutId = window.setTimeout(() => {
       setIsBooped(false);
@@ -38,7 +38,7 @@ function useBoop({
     return () => window.clearTimeout(timeoutId);
   }, [isBooped]);
 
-  const trigger = React.useCallback(() => {
+  const trigger = useCallback(() => {
     setIsBooped(true);
   }, []);
   return [style, trigger];
