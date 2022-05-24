@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { notionCall } from '../../server';
+import { notionCall } from '../../api';
 import ReactHtmlParser from 'react-html-parser';
 
 
