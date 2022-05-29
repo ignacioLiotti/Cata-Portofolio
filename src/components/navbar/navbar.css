@@ -6,10 +6,31 @@ nav{
     align-items: center;
     padding: 1.5rem 2rem;
     transition: all 0.3s ease-out;
+    z-index: 20;
 }
 nav h1{
     z-index: 20;
     position: relative;
+}
+.inpage{
+    color: var(--color-primary);
+    transform: scale(2);
+    position: relative;
+}
+nav ul li a:after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color:red;
+    left:0;
+    bottom: -10px;
+    height: 4px;
+    width: 0%;
+    transition: width .5s ease-in-out;
+}
+nav ul li a.inpage:after{
+    width: 100%;
+    transition: width .5s ease-in-out;
 }
 .navBtn{
     display: none;
@@ -22,13 +43,14 @@ nav ul{
 }
 nav ul li{
     margin-right: 1rem;
+    position: relative;
 }
 nav ul li a{
     text-decoration: none;
     color: #000;
     transition: all 0.3s;
 }
-nav ul li:first-child{
+nav ul li:active{
     font-weight: 500;
 }
 nav ul li a:hover{

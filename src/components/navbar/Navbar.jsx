@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import {BiMenu,BiX} from 'react-icons/bi'
 
 import './navbar.css'
@@ -36,11 +36,11 @@ const Navbar = () => {
           {isOpen ? <BiX onClick={()=>setIsOpen(false)}/> :  <BiMenu onClick={()=>setIsOpen(true)}/>}
         </div>
         <ul id={isOpen ? 'shown' : ''} >
-          <li><Link to='/'>Home</Link></li>
-          <li><Link to='/porfolio'>Porfolio</Link></li>
-          <li><Link to='/curriculum'>Curriculum</Link></li>
-          <li><Link to='/about'>About</Link></li>
-          <li><Link to='/contact'>contact</Link></li>
+          <li><NavLink to='/' className={({ isActive }) => isActive ? "inpage" : undefined}>Home</NavLink></li>
+          <li><NavLink to='/porfolio' className={({ isActive }) => isActive ? "inpage" : undefined}>Porfolio</NavLink></li>
+          <li><NavLink to='/curriculum' className={({ isActive }) => isActive ? "inpage" : undefined}>Curriculum</NavLink></li>
+          <li><NavLink to='/about' className={({ isActive }) => isActive ? "inpage" : undefined}>About</NavLink></li>
+          <li><NavLink to='/contact' className={({ isActive }) => isActive ? "inpage" : undefined}>contact</NavLink></li>
         </ul>
       </div>
     </nav>

@@ -9,7 +9,7 @@
 .proyectos__container-proyectos{
     display: grid;
     grid-template-columns: repeat(2,minmax(250px, 1fr));
-    grid-gap: 5rem;
+    grid-gap: 2rem;
     justify-content: center;
 }
 .proyectos__container-titulo{

@@ -1,0 +1,12 @@
+quote{
+    width: 60%;
+    display: block;
+    text-align: left;
+    padding: 3rem 5rem;
+    margin: 1rem;
+    background-color: rgb(223, 125, 125);
+}
+i,b{
+    font-family: var(--font-secondary);
+    display: contents;
+}

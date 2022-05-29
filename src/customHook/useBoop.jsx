@@ -4,6 +4,7 @@ import { useSpring } from 'react-spring';
 function useBoop({
   x = 0,
   y = 0,
+  width = 100,
   color,
   rotation = 0,
   scale = 1,

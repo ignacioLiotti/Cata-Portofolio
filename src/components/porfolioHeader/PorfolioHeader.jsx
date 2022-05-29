@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import line from '../../img/rectangleShort.png'
+import Typing from '../typing/Typing'
 import './porfolioHeader.css'
 
 const PorfolioHeader = () => {
@@ -8,6 +9,7 @@ const PorfolioHeader = () => {
     <div className='porfolioHeader__container'>
         <div className="porfolioHeader__container-title">
             <h1>My Porfolio</h1>
+            <Typing>hola tipeo</Typing>
             <img src={line} alt="" />
         </div>
         <ul>

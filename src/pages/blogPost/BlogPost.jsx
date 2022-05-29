@@ -1,39 +1,76 @@
 import React, { useEffect, useState } from 'react';
+import HtmlParser from 'react-html-parser/lib/HtmlParser';
 import { useParams } from 'react-router-dom';
-import { notionCall } from '../../api';
+import axios from '../../axios.js'
+import Styled from 'styled-components'
+
+import './blogPost.css'
 
 const BlogPost = () => {
-  
-  const [notionData, setNotionData]= useState('empty')
 
-  useEffect (() => {
-    notionCall().then(data => {
-    setNotionData(data)
-    })
-  },[])
+  const [books, setBooks] = useState([]);
 
-const [post, setPost] = useState(true)
-
-const handlePopUp = (e) => {
-    setPost((prev)=>!prev)
-}
-
+  useEffect(() => {
+    async function fetchData() {
+    const req = await axios.get('/62b7073e412a48cfa18d4ff5c2b1079c');
+    setBooks(req.data);
+    }
+    fetchData();
+    }, [])
   const urlId=useParams()
-//   console.log(urlId)
-  const page = notionData?.results?.find(post=>(post.properties?.Name?.title?.[0].plain_text===urlId?.id))
-  console.log('hola',page)
+  const page = books?.find(post=>(post.Name===urlId?.id))
+  console.log(page)
 
-  // const img = page?.properties?.Image?.files?.[0]?.file?.url
-  // const name = page?.properties?.Name?.title?.[0].plain_text
-  const summary = page?.properties?.Content?.rich_text?.[0]?.plain_text
+  const img = page?.Image?.[0]?.url
+  const imgDesc = page?.ImgDesc
+  const name = page?.Name
+  const content = page?.Content
 
-  console.log('summary',typeof summary)
   return (
-    <div>
-        <button onClick={handlePopUp}>aaaa{post}</button>
-        {post && 'aaaa'}
-    </div>
+    <Blog>
+      <Date>{page?.Fecha}</Date>
+      <Title>{name}</Title>
+      {img && 
+      <>
+      <Image src={img} alt={name}/>
+      <Desc>{imgDesc}</Desc>
+      </>
+      }
+      {HtmlParser(content)}
+    </Blog>
   )
 }
+const Desc = Styled.p`
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  align-self: center;
+`
 
+const Image = Styled.img`
+  width: 100%;
+`
+
+const Blog= Styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin : 4rem 25%;
+  height: 100%;
+  font-family: var(--font-secondary)
+`
+const Title = Styled.h1`
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  align-self: center;
+  font-family: var(--font-primary)
+
+`
+const Date = Styled.p`
+  font-size: 1rem;
+  font-weight: 300;
+  align-self: center;
+`
 export default BlogPost
