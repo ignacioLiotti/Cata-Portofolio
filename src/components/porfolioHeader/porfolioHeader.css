@@ -69,3 +69,14 @@
     width: 100%;
     transition: width .5s ease-in-out;
 }
+@media screen and (max-width: 768px){
+    .porfolioHeader__container-title h1{
+        font-size: 3rem;
+    }
+    .porfolioHeader__container ul li a{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    
+}

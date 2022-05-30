@@ -8,10 +8,10 @@ const HeroSection = () => {
     <div className='hero__container'>
       <div className='hero__container-text'>
         <img className='hero__container-rect' src={rectangle} alt="" />
-        <h1>Mucho Texto bienvenida, palabras</h1>
+        <h1>Hola! Bienvenidos a mi blog.</h1>
         <div className='hero__container-items'>
           <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a tempore itaque illum quibusdam cumque, fuga magni. Dolor fugit distinctio deserunt praesentium esse laboriosam sit, mollitia et dignissimos at impedit?</p>
+            <p>Mi nombre es Catalina Galíndez soy estudiante de Ciencias Sociales en la Universidad Torcuato Di Tella, apasionada por la escritura, el marketing, la programación y los libros.</p>
             <Link className='button' to='/'>LINK A ALGO</Link>
           </div>
         </div>

@@ -22,9 +22,9 @@ const Curriculum = () => {
                 <h1>Curriculum</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, doloribus corrupti et iusto laboriosam nesciunt deserunt fugit vero iste rerum ullam illo, porro quia quidem incidunt est cum eaque eius.</p>
                 <ul>
-                    <li><IoCheckmarkSharp/>Se usar word</li>
-                    <li><IoCheckmarkSharp/>Y tmb excel</li>
-                    <li><IoCheckmarkSharp/>a veces me baño</li>
+                    <li><IoCheckmarkSharp/>Primer Perk</li>
+                    <li><IoCheckmarkSharp/>Segundo Perk</li>
+                    <li><IoCheckmarkSharp/>Tercer Perk</li>
                 </ul>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam inventore aliquid dolores minima temporibus ratione asperiores sunt nobis sint, nostrum necessitatibus. Ut fugiat quis ullam minima tenetur magnam sunt aliquid?</p>
             </div>

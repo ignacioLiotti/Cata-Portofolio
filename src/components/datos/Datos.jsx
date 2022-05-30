@@ -12,7 +12,7 @@ const Datos = () => {
                 <div className='datos-container_text'>
                     <h2>105%</h2>
                     <p>
-                        Una capa Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Nulla euismod, urna eu tempor consectetur, nisi nunc
                     </p>             
                 </div>

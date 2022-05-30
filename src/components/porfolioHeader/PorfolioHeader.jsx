@@ -8,15 +8,14 @@ const PorfolioHeader = () => {
   return (
     <div className='porfolioHeader__container'>
         <div className="porfolioHeader__container-title">
-            <h1>My Porfolio</h1>
-            <Typing>hola tipeo</Typing>
+            <h1>Mi Portfolio</h1>
+            {/* <Typing>hola tipeo</Typing> */}
             <img src={line} alt="" />
         </div>
         <ul>
-            <li><Link to='/'>Categoria 1</Link></li>
+            <li><a href='#periodismo'>Periodismo</a></li>
             <li><Link to='/'>Categoria 2</Link></li>
             <li><Link to='/'>Categoria 3</Link></li>
-            <li><Link to='/'>Categoria 4</Link></li>
         </ul>
     </div>
   )

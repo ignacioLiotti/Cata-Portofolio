@@ -36,11 +36,11 @@ const Navbar = () => {
           {isOpen ? <BiX onClick={()=>setIsOpen(false)}/> :  <BiMenu onClick={()=>setIsOpen(true)}/>}
         </div>
         <ul id={isOpen ? 'shown' : ''} >
-          <li><NavLink to='/' className={({ isActive }) => isActive ? "inpage" : undefined}>Home</NavLink></li>
-          <li><NavLink to='/porfolio' className={({ isActive }) => isActive ? "inpage" : undefined}>Porfolio</NavLink></li>
+          <li><NavLink to='/' className={({ isActive }) => isActive ? "inpage" : undefined}>Inicio</NavLink></li>
+          <li><NavLink to='/porfolio' className={({ isActive }) => isActive ? "inpage" : undefined}>Portfolio</NavLink></li>
+          <li><NavLink to='/notas' className={({ isActive }) => isActive ? "inpage" : undefined}>Mis Notas</NavLink></li>
           <li><NavLink to='/curriculum' className={({ isActive }) => isActive ? "inpage" : undefined}>Curriculum</NavLink></li>
-          <li><NavLink to='/about' className={({ isActive }) => isActive ? "inpage" : undefined}>About</NavLink></li>
-          <li><NavLink to='/contact' className={({ isActive }) => isActive ? "inpage" : undefined}>contact</NavLink></li>
+          <li><NavLink to='/about' className={({ isActive }) => isActive ? "inpage" : undefined}>Sobre Mi</NavLink></li>
         </ul>
       </div>
     </nav>

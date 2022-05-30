@@ -60,6 +60,9 @@
     justify-content: center;
     align-items: center;
 }
+.socials a{
+    text-decoration: none;
+}
 @media screen and (max-width: 768px){
     .contact__container{
         flex-direction: column;
@@ -77,6 +80,7 @@
         font-size: 1.7rem;
     }
     .contact_right .contact__socials a{
-        font-size: 3rem;
+        font-size: 2rem;
+        margin: 0.5rem;
     }
 }

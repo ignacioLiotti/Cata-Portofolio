@@ -1,32 +1,33 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
+import Styled from 'styled-components';
 
 import './form.css'
 
 function Form() {
   const [state, handleSubmit] = useForm("xyyoozgy");
   if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
+      return <Gracias>Gracias por contactarme!</Gracias>;
   }
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="email">Email Address</label>
+      <label htmlFor="email">Email</label>
       <input
         id="email"
         type="email" 
         name="email"
-        placeholder='lets@contact.com'
+        placeholder='hablemos@contacto.com'
       />
       <ValidationError 
         prefix="Email" 
         field="email"
         errors={state.errors}
       />
-      <label htmlFor="message">Your Message</label>
+      <label htmlFor="message">Deja un mensaje</label>
       <textarea
         id="message"
         name="message"
-        placeholder='Hi! I would like to talk about...'
+        placeholder='Hola! Me gustaria hablar sobre...'
       />
       <ValidationError 
         prefix="Message" 
@@ -39,5 +40,11 @@ function Form() {
     </form>
   );
 }
+
+const Gracias = Styled.p`
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 1rem;
+`
 
 export default Form

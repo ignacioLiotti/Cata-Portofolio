@@ -31,7 +31,7 @@
     flex-direction: row;
 }
 .hero__container .hero__container-text h1{
-    font-size: 6rem;
+    font-size: 6.5rem;
     line-height: 1em;
     font-family: var(--font-primary);
     font-weight: 500;

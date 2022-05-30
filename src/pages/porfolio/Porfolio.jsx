@@ -13,8 +13,7 @@ const Porfolio = () => {
     async function fetchData() {
     const req = await axios.get('/62b7073e412a48cfa18d4ff5c2b1079c').then(res => {return res?.data?.filter(item => item.Status === 'Live');
     })
-    
-    setBooks(req)}
+    setBooks(req.slice(0,4))}
     fetchData();
     }, [])
 
@@ -22,7 +21,7 @@ const Porfolio = () => {
     <div>
       <PorfolioHeader/>
       <HeroSection/>
-      <Projects projects={books} title='Periodismo'/>
+      <Projects projects={books} title='Periodismo' id='periodismo'/>
     </div>
   )
 }

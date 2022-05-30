@@ -4,11 +4,11 @@ import { useSpring } from 'react-spring';
 function useBoop({
   x = 0,
   y = 0,
-  width = 100,
   color,
   rotation = 0,
   scale = 1,
   timing = 150,
+  origin,
   springConfig = {
     tension: 300,
     friction: 10,
@@ -21,6 +21,7 @@ function useBoop({
     display: 'inline-block',
     backfaceVisibility: 'hidden',
     color: isBooped ? color : '#000',
+    transformOrigin: isBooped ? origin : 'center',
     transform: isBooped
       ? `translate(${x}px, ${y}px)
          rotate(${rotation}deg)

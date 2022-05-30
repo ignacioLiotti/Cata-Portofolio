@@ -3,6 +3,7 @@ import HtmlParser from 'react-html-parser/lib/HtmlParser';
 import { useParams } from 'react-router-dom';
 import axios from '../../axios.js'
 import Styled from 'styled-components'
+import { Contact } from '../../components';
 
 import './blogPost.css'
 
@@ -27,6 +28,7 @@ const BlogPost = () => {
   const content = page?.Content
 
   return (
+    <>
     <Blog>
       <Date>{page?.Fecha}</Date>
       <Title>{name}</Title>
@@ -38,6 +40,8 @@ const BlogPost = () => {
       }
       {HtmlParser(content)}
     </Blog>
+    <Contact/>
+    </>
   )
 }
 const Desc = Styled.p`
