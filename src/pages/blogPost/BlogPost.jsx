@@ -62,7 +62,10 @@ const Blog= Styled.div`
   flex-direction: column;
   margin : 4rem 25%;
   height: 100%;
-  font-family: var(--font-secondary)
+  font-family: var(--font-secondary);
+  @media (max-width: 768px) {
+    margin : 4rem 10%;
+  }
 `
 const Title = Styled.h1`
   font-size: 2.5rem;
