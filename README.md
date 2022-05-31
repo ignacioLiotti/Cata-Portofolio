@@ -10,7 +10,7 @@
 
 ### Notion
 ![image](https://user-images.githubusercontent.com/65029266/171017645-c3c9a81e-46ed-40d9-a264-758c0584713b.png)
-The "Blog" part of this project is done using the Notion API, the user has a personalized page on its Notion workspace, with a table on board view, were they can write and organize its articles and drag-n-drop them into the different stages, once one is droped in the LIVE section, that article is fetched and displayed in the page.
+The "Blog" part of this project is done using the Notion API, the user has a personalized page on its Notion workspace, with a table on board view, where they can write and organize its articles and drag-n-drop them into the different stages, once one is droped in the LIVE section, that article is fetched and displayed in the page.
 
 ![image](https://user-images.githubusercontent.com/65029266/171018229-9f8e1a06-7827-417c-bee0-0f6ec7871e21.png)
 Every article has a set of properties witch can be customised. One property due to add (once the article cathegories are defined by user) is the cathegory in witch the article falls, so it can be sorted later on.
